@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url(./global.css);
+
+
+body {
+ font-family: "DM Sans", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+  background-color: #ffffff;
+  padding: 15px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo img {
+  height: 40px;
+}
+
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+
+.nav-links li a:hover {
+  color: #673de6; /* Color morado tipo Hostinger */
+}
+
+/* NAV ACTIONS */
+.nav-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-actions a {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.nav-actions .flag img {
+    height: 20px;
+    width: auto;
+}
+
+.nav-actions a:last-child {
+  background-color: #673de6;
+  color: #fff;
+}
+
+.nav-actions a:last-child:hover {
+  background-color: #512da8;
+}
+
+.nav-actions a:first-child:hover {
+  color: #512da8;
+}
+
+
+
+/* HERO SECTION */
+
+.hero {
+  height: auto;
+  width: 100%;
+  background-color: #ffffff;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.hero-content {
+  line-height: 32px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 50%;
+  /* margin: 50px; */
+  height: 450px;
+  width: 410px;
+}
+.hero-content p {
+  font-weight: 700;
+  font-size: 20px;
+  color: #333;
+}
+.hero-content .discount {
+  color: #673de6;
+}
+.hero-image{
+  max-width: 100%;
+}
+.hero-image img {
+  max-width: 100vh;
+  height: auto;
+}
+
+.hero-features {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #333;
+}
+.hero-features svg {
+  color: chartreuse;
+  height: 20px;
+  width: 20px;
+}
+.hero-features-button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.hero-features-button a {
+  width: 190px;
+  height: 48px;
+  text-decoration: none;
+  background-color: #673de6;
+  color: #fff;
+  padding: 11px 47px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+
+/* MIGRATION SECTION */
+
+.migration-container {
+    height: auto;
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #1f1346;
+}
+
+.migration-title-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    color: white;
+    text-align: center;
+    width: 60%;
+}
+.migration-title-paragraph h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+
+.migration-services {
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;
+    gap: 20px;
+}
+
+.migration-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    gap: 15px;
+    background-color: #3f209ca4;
+    height: 256px;
+    width: 360px;
+    border-radius: 15px;
+    padding: 20px; 
+}
+
+
+.migration-service-icon {
+    height: 40px; 
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #673de6;
+    border-radius: 5px;
+    flex-shrink: 0; 
+}
+
+.migration-service-icon svg {
+    height: 24px; 
+    width: 24px; 
+}
+
+.migration-service h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0; 
+}
+
+.migration-service p {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0; 
+}
+.migration-button {
+    margin-top: 20px;
+}
+
+.migration-button a {
+    text-decoration: none;
+    background-color: #673de6;
+    padding: 11px 47px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.migration-button a span {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #f9f9fc;
+  padding: 20px 40px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.logo-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.logo-section svg {
+  margin-right: 30px;
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+}
+
+.social-media img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s;
+}
+
+.social-media img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.payments-methods {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.payments-methods img {
+  height: 32px;
+  border-radius: 6px;
+  background: white;
+  padding: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.terms {
+  display: flex;
+  gap: 20px;
+}
+
+.terms a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #444;
+}
+
+.footer-bottom .iva {
+  text-align: right;
+}
+
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+/*  (1600px hasta 2000px) */
+@media (min-width: 1600px) {
+  .hero {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .migration-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  footer {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+/* Tablets (992px) */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 80%;
+  }
+
+  .migration-title-paragraph {
+    width: 80%;
+  }
+
+  .migration-services {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .migration-service {
+    width: 45%;
+  }
+
+  .footer-bar {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Móviles (768px) */
+@media (max-width: 768px) {
+  /* NAVBAR */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .hero-content {
+    font-size: 14px;
+    gap: 5px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-features {
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-features-button a {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  /* MIGRATION */
+  .migration-title-paragraph {
+    width: 90%;
+  }
+
+  .migration-services {
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+  }
+
+  .migration-service {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/* (480px, móviles chicos tipo 320px) */
+@media (max-width: 480px) {
+  .hero-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .hero-features {
+    font-size: 12px;
+    gap: 5px;
+  }
+
+  .migration-title-paragraph h2 {
+    font-size: 24px;
+  }
+
+  .migration-service {
+    padding: 15px;
+    height: auto;
+  }
+
+  .footer-bar {
+    gap: 10px;
+  }
+
+  .terms {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
